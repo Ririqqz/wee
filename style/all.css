@@ -10,7 +10,23 @@ img {
 
 body {
     font-family: Arial, Helvetica, "微軟正黑體", sans-serif;
+
 }
+
+/* helper */
+
+.container{
+    max-width: 1200px;
+    box-sizing: border-box;
+}
+
+.ma-auto{
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+
 
 /* header ---------------------------------------- */
 
