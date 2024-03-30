@@ -10,23 +10,18 @@ img {
 
 body {
     font-family: Arial, Helvetica, "微軟正黑體", sans-serif;
-
 }
 
-/* helper */
-
-.container{
+/* helper -------------------------------------- */
+.container {
     max-width: 1200px;
     box-sizing: border-box;
 }
 
-.ma-auto{
+.mx-auto {
     margin-left: auto;
     margin-right: auto;
 }
-
-
-
 
 /* header ---------------------------------------- */
 
@@ -35,9 +30,14 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    position: fixed;
+    z-index: 10;
+    width: 100%;
 }
 
-.header-head, .header-body, .header-foot {
+.header-head,
+.header-body,
+.header-foot {
     padding: .5rem 1rem;
     box-sizing: border-box;
 }
@@ -47,7 +47,8 @@ body {
     width: 80px;
 }
 
-.header-foot, .header-btn-times {
+.header-foot,
+.header-btn-times {
     display: none;
 }
 
@@ -80,3 +81,132 @@ body {
 .header-link:hover {
     color: #cf7688;
 }
+
+/* banner ---------------------------------------- */
+
+.banner {
+    background-image: linear-gradient(135deg, #cf7688 20%, #f4ba54 100%);
+    color: #fff;
+    clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+}
+
+.banner-container {
+    display: flex;
+    align-items: center;
+}
+
+.banner-head, .banner-body {
+    width: 50%;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+.banner-head {
+    /* background-color: pink; */
+}
+
+.banner-body {
+    /* background-color: yellowgreen; */
+}
+
+.banner-index .banner-head,
+.banner-index .banner-body {
+    padding-top: 3rem;
+}
+
+.banner-index .banner-head {
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+}
+
+.banner-index .banner-body {
+    position: relative;
+    width: 60%;
+}
+
+.banner-title {
+    font-size: 2.2rem;
+    margin-bottom: 2rem;
+}
+
+.banner-small {
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    margin-top: .5rem;
+    display: block;
+}
+
+.banner-subTitle {
+    font-size: 1.75rem;
+    margin-bottom: 2rem;
+    line-height: 1.5;
+    color: rgba(255, 255, 255, .7);
+}
+
+.banner-ul {
+    display: flex;
+    text-transform: uppercase;
+    font-weight: 600;
+    color: rgba(255, 255, 255, .3);
+    margin-bottom: 4rem;
+}
+
+.banner-ul-order1 {
+    order: -1;
+}
+
+.banner-li {
+    margin-right: 1rem;
+}
+
+.banner-desc {
+    line-height: 1.6;
+}
+
+.banner-btns {
+    margin-top: 2rem;
+}
+
+.banner-btn {
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    border: solid 2px #fff;
+    padding: 1rem 3rem;
+    border-radius: 5px;
+    transition-duration: .3s;
+    display: inline-block;
+}
+
+.banner-btn:hover {
+    background-color: rgba(255, 255, 255, .2);
+}
+
+.banner-img {
+    max-width: 100%;
+    height: auto;
+}
+
+.banner-img-mobile,
+.banner-img-pad {
+    position: absolute;
+}
+
+.banner-img-mobile {
+    left: 0;
+    bottom: 5rem;
+}
+
+.banner-img-pad {
+    bottom: -2rem;
+    right: 1rem;
+}
+
+.banner-img-desktop {
+    margin-left: 4.5rem;
+}
+
+
+
+

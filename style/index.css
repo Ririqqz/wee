@@ -1,0 +1,36 @@
+@charset "utf-8";
+
+.base {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+}
+
+.base-head, .base-foot {
+    text-align: center;
+}
+
+.base-body {
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+}
+
+.base-title {
+    text-transform: uppercase;
+    font-size: 2rem;
+    letter-spacing: 10px;
+}
+
+.base-btn {
+    text-decoration: none;
+    text-transform: uppercase;
+    border: solid 2px #cf7688;
+    padding: 1rem 3rem;
+    display: inline-block;
+    color: #cf7688;
+    border-radius: 5px;
+    transition-duration: .3s;
+}
+
+.base-btn:hover {
+    background-color: #f6cdd5;
+}
