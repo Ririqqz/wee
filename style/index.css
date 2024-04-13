@@ -5,7 +5,13 @@
     padding-bottom: 5rem;
 }
 
-.base-head, .base-foot {
+.base-container {
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+.base-head,
+.base-foot {
     text-align: center;
 }
 
@@ -33,4 +39,178 @@
 
 .base-btn:hover {
     background-color: #f6cdd5;
+}
+
+/* service -------------------------- */
+
+.service-items {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.service-item {
+    width: 33.33333%;
+    border: solid 1px #e6e6e6;
+    box-sizing: border-box;
+    padding: 1.5rem 2rem;
+    margin-left: -1px;
+    margin-bottom: -1px;
+    color: rgba(0, 0, 0, .7);
+}
+
+.service-title,
+.service-icons {
+    text-align: center;
+}
+
+.service-title {
+    font-size: 1.25rem;
+}
+
+.service-desc {
+    font-size: .95rem;
+    line-height: 1.5;
+    text-align: justify;
+}
+
+.service-icons {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    font-size: 3rem;
+}
+
+.service-icons .fas {
+    color: #cf7688;
+}
+
+/* project ---------------------------------------- */
+
+.base-project {
+    background-image: linear-gradient(#f6f6f6 0, #fff 50%);
+}
+
+.project-items {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.project-item {
+    width: 20%;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.project-img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* intro ------------------------------------ */
+
+.base-intro {
+    background-image: url("../images/intro-bg.jpg");
+    background-attachment: fixed;
+    background-size: cover;
+    clip-path: polygon(0 0, 100% 10%, 100% 85%, 0 100%);
+    position: relative;
+}
+
+.base-intro::before {
+    content: "";
+    background-color: rgba(0, 0, 0, .7);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+.base-intro .base-head,
+.base-intro .base-foot {
+    text-align: left;
+}
+
+.base-intro .base-title {
+    letter-spacing: 0;
+}
+
+.base-intro .base-title-small,
+.base-intro .base-title-primary {
+    display: block;
+}
+
+.base-intro .base-title-small {
+    color: #ccc;
+    font-size: 2.5rem;
+}
+
+.base-intro .base-title-primary {
+    color: #fff;
+    font-size: 3.5rem;
+    margin-top: .5rem;
+}
+
+.base-intro .base-btn {
+    color: #fff;
+    border-color: #fff;
+}
+
+.base-intro .base-btn:hover {
+    background-color: rgba(255, 255, 255, .2);
+}
+
+.intro-desc {
+    color: #fff;
+    line-height: 1.7;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+/* build ---------------------------------------- */
+
+.base-build .base-body {
+    max-width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.build-li {
+    background-color: #ccc;
+    padding: 1.5rem 3rem;
+    text-align: center;
+    color: rgba(255, 255, 255, .9);
+    /* clip-path: polygon(10% 0, 100% 0, 90% 100%, 0 100%); */
+    border-radius: 5px;
+    transform: skew(-15deg);
+}
+
+.build-li+.build-li {
+    margin-top: 2rem;
+}
+
+.build-li-1 {
+    background-color: #f5ba54;
+}
+
+.build-li-2 {
+    background-color: #eaa666;
+}
+
+.build-li-3 {
+    background-color: #cf7688;
+}
+
+.build-content {
+    transform: skew(15deg);
+}
+
+.build-title {
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+.build-desc {
+    line-height: 1.5;
+    margin-top: 1rem;
 }
