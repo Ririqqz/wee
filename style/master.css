@@ -33,3 +33,18 @@ body {
     color: rgba(0, 0, 0, .7);
     text-align: justify;
 }
+
+
+/* grid */
+
+.grid{
+    display: grid;
+    gap:2rem;
+}
+
+.grid-3{
+    grid-template-columns: repeat(3,1fr);
+}
+.grid-{
+    grid-template-columns: repeat(4,1fr);
+}
