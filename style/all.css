@@ -418,6 +418,11 @@ body {
     padding-top: 1rem;
 }
 
+.banner-title-line::after{
+    left:50%;
+    margin-left: -1.5rem;
+}
+
 .aside{
     display: none;
 }
