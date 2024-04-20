@@ -34,17 +34,21 @@ body {
     text-align: justify;
 }
 
+/* grid --------------------------- */
 
-/* grid */
-
-.grid{
+.grid {
     display: grid;
-    gap:2rem;
+    gap: 2rem;
 }
 
-.grid-3{
-    grid-template-columns: repeat(3,1fr);
+.grid-3 {
+    grid-template-columns: repeat(3, 1fr);
 }
-.grid-4{
-    grid-template-columns: repeat(4,1fr);
+
+.grid-4 {
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.grid-5 {
+    grid-template-columns: repeat(5, 1fr);
 }

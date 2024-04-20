@@ -1,51 +1,47 @@
 @charset "utf-8";
 
-.card{
-    background-color: white;
+.card {
+    background-color: #fff;
     padding: 2rem;
-    color: rgba(0,0,0, 0.7);
-
+    color: rgba(0, 0, 0, .7);
 }
 
-.card-head{
+.card:hover .card-icon {
+    background-color: #cf7688;
+    color: #fff;
+}
+
+.card-head {
     text-align: center;
 }
 
-.card-title{
+.card-title {
     font-size: 1.5rem;
     font-weight: 600;
 }
 
-.card-desc{
+.card-desc {
     margin-top: 1rem;
     margin-bottom: 1rem;
     line-height: 1.5;
     text-align: justify;
-
 }
 
-.card-ul{
+.card-ul {
     list-style-type: square;
     margin-left: 1.5rem;
     line-height: 1.5;
-    font-size: 0.95rem;
-
+    font-size: .95rem;
 }
 
-.card-icon{
-    display: inline-block;
-    margin-bottom: 2rem;
+.card-icon {
+    border: dashed 1px #cf7688;
     width: 5rem;
     line-height: 5rem;
     font-size: 2.5rem;
     color: #cf7688;
-    border: solid 1px #cf7688;
     border-radius: 50%;
-    transition-duration: 0.3s;
-
-}
-
-.card:hover .cars-icon{
-    color: white;
-    background-color: #cf7688;
+    display: inline-block;
+    margin-bottom: 2rem;
+    transition-duration: .3s;
 }

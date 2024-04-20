@@ -1,136 +1,124 @@
 @charset "utf-8";
 
-.state{
+.state {
     background-color: #fff;
     padding-top: 5rem;
     margin-left: -1rem;
-    margin-right:-1rem ;
+    margin-right: -1rem;
 }
 
-.state-head{
+.state-head {
     text-align: center;
 }
 
 .state-body,
-.state-foot{
+.state-foot {
     margin-top: 3rem;
 }
 
-.state-img{
-    width: 100%;
-    height: auto;
-}
-
-.state-ul{
-    display: flex;
-    justify-content: center;
-}
-
-.state-title{
+.state-title {
     font-size: 2rem;
     font-weight: 600;
 }
 
-.state-desc{
+.state-desc {
     margin-top: 1rem;
-    color: #ccc;
+    color: rgba(0, 0, 0, .7);
 }
 
-.state-li{
+
+.state-ul {
+    display: flex;
+    justify-content: center;
+}
+
+.state-li {
     text-align: center;
+    padding-left: 3rem;
+    padding-right: 3rem;
+}
+
+.state-li+.state-li {
+    border-left: solid 1px #ccc;
+}
+
+.state-img {
+    width: 100%;
+    height: auto;
 }
 
 .state-number,
 .state-unit,
 .state-term,
-.state-tips{
+.state-tips {
     display: block;
-    margin-left: 3rem;
-    margin-right: 3rem;
-}
-
-.state-li + .state-li{
-    border-left: solid 1px #ccc;
-}
-
-
-.state-number,
-.state-unit,
-.state-term{
-    font-weight: 600;  
-}
-
-
-.state-unit,
-.state-term{
-    margin-top: 1rem;
-    margin-bottom: 1rem;
-    
-}
-
-.state-number{
-    font-size: 4rem;
-}
-
-.state-unit{
-    font-size: 1.5rem
-}
-
-.state-term{
-    font-size: 2rem;
-}
-
-.state-tips{
-    color: #ccc;
 }
 
 .state-number,
 .state-unit,
-.state-term{
-    color: lightpink;  
+.state-term {
+    font-weight: 600;
+    color: #3eb5fe;
 }
 
 .state-li:nth-child(even) .state-number,
 .state-li:nth-child(even) .state-unit,
 .state-li:nth-child(even) .state-term {
-    color:lightskyblue;
+    color: #33d8ab;
 }
 
-/* env */
+.state-unit,
+.state-term {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
 
-.env{
+.state-number {
+    font-size: 5rem;
+}
+
+.state-unit {
+    font-size: 1.5rem;
+}
+
+.state-term {
+    font-size: 2rem;
+}
+
+.state-tips {
+    color: rgba(0, 0, 0, .7);
+}
+
+/* env --------------------- */
+
+.env {
     display: flex;
-    gap:2rem;
+    gap: 2rem;
     padding-top: 5rem;
     padding-bottom: 5rem;
 }
 
-.env-head{
+.env-head {
     width: 33.3333%;
 }
 
-.env-title{
-    font-size: 2rem;
-    font-weight: 600;
+.env-body {
+    width: 66.66666%;
 }
 
-.env-img{
+.env-img {
     max-width: 100%;
     height: auto;
 }
 
-.env-desc{
+.env-title {
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+.env-desc {
     margin-top: 1rem;
     line-height: 1.5;
     text-align: justify;
-    color: #ccc;
+    color: rgba(0, 0, 0, .7);
 }
-
-
-
-
-
-
-
-
-
