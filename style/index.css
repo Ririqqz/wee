@@ -272,40 +272,36 @@
 }
 
 @keyframes fadeInLeftToRight {
-    to{
+    to {
         transform: translateX(0);
         opacity: 1;
     }
 }
 
-/* rwd */
-
-@media screen and(max-width:480px) {
-
-    .service-items{
+/* RWD ------------------- */
+@media screen and (max-width: 480px) {
+    .service-items {
         flex-direction: column;
     }
-    
-    .service-item{
+
+    .service-item {
         width: auto;
     }
 
-   .base-intro{clip-path: polygon(0 0, 100% 5%, 100% 95%, 0 100%);
-   }
+    .project-item {
+        width: 33.33333%;
+    }
 
-   .base-intro .base-head,
-   .base-intro .base-btns{
-    text-align: center;
-   }
+    .base-intro {
+        clip-path: polygon(0 0, 100% 5%, 100% 95%, 0 100%);
+    }
 
-   .base-build .base-body{
-           max-width: 75vw;
-   }
+    .base-intro .base-head,
+    .base-intro .base-btns {
+        text-align: center;
+    }
 
-   .project-item{
-    width: 33.3333%;
-   }
-
-
-
+    .base-build .base-body {
+        max-width: 80vw;
+    }
 }
